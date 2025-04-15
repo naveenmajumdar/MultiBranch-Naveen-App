@@ -25,6 +25,7 @@ pipeline {
         container('maven') {
           sh 'mvn -version'
           sh ' echo Hello World created by naveen > hello.txt'
+          sh ' adding next line to creat PR >> hello.txt'
           sh 'ls -last'
         }
         container('node') {
