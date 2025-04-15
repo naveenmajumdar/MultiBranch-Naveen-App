@@ -26,6 +26,7 @@ pipeline {
           sh 'mvn -version'
           sh ' echo Hello World created by naveen > hello.txt'
           sh ' echo adding next line to creat PR >> hello.txt'
+          sh ' echo adding next line to creat PR on Main branch >> hello.txt'
           sh 'ls -last'
         }
         container('node') {
